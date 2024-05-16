@@ -1,0 +1,243 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+.image{
+    height:600px;
+    width:450px;
+    float:right;
+    padding:0;
+    margin:0;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#title {
+    height: 600px;
+    animation: gradientAnimation 18s ease infinite; /* Adjust timing as needed */
+    background: linear-gradient(300deg, #6F4E37 ,#DAA06D,#F2D2BD,#80461B);
+}
+
+
+.container{
+    height: 600px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    
+}
+.left-box{
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(235, 214, 188, 0.693);
+    border-radius: 15px;
+}
+.tag{
+    text-align:right;
+    font-style: italic;
+    margin-right: 10px;
+    color: crimson;
+    font-weight: bolder;
+}
+.intro{
+    font-family:'freeman',cursive;
+    color:maroon;
+    font-size:2rem;
+}
+h4 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  
+.me{
+    margin-top: 40px;
+    display: block;
+    text-align:center;
+    font-family:'salsa',cursive;
+    font-size: 1.2rem;
+    background-color:#DAA06D;
+    border-style:groove;
+    padding: 10px;
+    border-radius: 20px;
+    font-stretch: expanded;
+    font-weight: bolder;
+    
+}
+.i{
+    color: darkred;
+    font-size: 1.4rem;
+}
+.xoxo{
+    color: darkred;
+    font-style: italic;
+}
+@keyframes uniqueAnimation{
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.2) rotate(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.img{
+    height:350px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    animation: uniqueAnimation 5s ease-in-out forwards;  
+}
+#about{
+    height: 600px;
+    background-image: url('./A\ \(\(\(coffee\ sta\ ef286bbc-7923-4918-b902-6204a591b2a9.png');
+    background-size: cover; /* Adjusts the background image size to cover the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+    
+}
+.ab{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+
+    background-color:rgba(255, 255, 255, 0.4); 
+    font-family:'salsa',cursive;
+    border-top-left-radius:80px ;
+    border-top-right-radius:80px;
+    color: darkred;
+    font-weight: bold;
+}
+.su{
+font-style: oblique;
+}
+.huh{
+    font-family: 'freeman';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.4);
+    margin-bottom: 10px;
+
+}
+#contact {
+    height: 600px;
+    background-color: #F2D2BD; /* Choose your desired background color */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #6F4E37;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #80461B;
+}
+
+.contact-info ul {
+    list-style-type: none;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #DAA06D;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .image {
+        height: 400px;
+        width: 300px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .left-box {
+        width: 90%;
+    }
+
+    .img {
+        height: 250px;
+        margin: 20px auto;
+        float: none;
+    }
+}
+
+
+
+
+
